@@ -1,0 +1,15 @@
+"""Colors"""
+def main():
+    """main"""
+    color_a = input()
+    color_b = input()
+    if (color_a) == "Red" and (color_b) == "Yellow":
+        color = "Orange"
+    elif (color_a) == "Red" and (color_b) == "Blue":
+        color = "Violet"
+    elif (color_a) == "Yellow" and (color_b) == "Blue":
+        color = "Green"
+    else:
+        color = "Error"
+    print(color)
+main()
