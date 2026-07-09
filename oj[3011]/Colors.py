@@ -1,19 +1,19 @@
 """Colors"""
 def main():
     """main"""
-    colora = input()
-    colorb = input()
-    if((colora) == "Red" and (colorb) == "Yellow") or ((colora) == "Yellow" and (colorb) == "Red"):
+    co1 = input()
+    co2 = input()
+    if((co1) == "Red" and (co2) == "Yellow") or ((co1) == "Yellow" and (co2) == "Red"):
         color = "Orange"
-    elif((colora) == "Red" and (colorb) == "Blue") or ((colora) == "Blue" and (colorb) == "Red"):
+    elif((co1) == "Red" and (co2) == "Blue") or ((co1) == "Blue" and (co2) == "Red"):
         color = "Violet"
-    elif((colora) == "Yellow" and (colorb) == "Blue") or ((colora) == "Blue" and (colorb) == "Yellow"):
+    elif((co1) == "Yellow" and (co2) == "Blue") or ((co1) == "Blue" and (co2) == "Yellow"):
         color = "Green"
-    elif(colora) == "Yellow" and (colorb) == "Yellow":
+    elif(co1) == "Yellow" and (co2) == "Yellow":
         color = "Yellow"
-    elif(colora) == "Blue" and (colorb) == "Blue":
+    elif(co1) == "Blue" and (co2) == "Blue":
         color = "Blue"
-    elif(colora) == "Red" and (colorb) == "Red":
+    elif(co1) == "Red" and (co2) == "Red":
         color = "Red"
     else:
         color = "Error"
