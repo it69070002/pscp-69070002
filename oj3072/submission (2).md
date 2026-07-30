@@ -15,7 +15,7 @@
 หมายเลข/ชื่อโจทย์ OJ:
 
 ```text
-
+OJ3072 - A-E-I-O-U
 ```
 
 OJ submission ID ถ้ามีการส่งแล้ว:
@@ -27,13 +27,13 @@ OJ submission ID ถ้ามีการส่งแล้ว:
 สถานะ OJ:
 
 ```text
-Pass / Not Pass / Not Submit
+Pass
 ```
 
 เวลาที่ใช้คิดและทำโจทย์ด้วยตนเอง:
 
 ```text
-
+15-30 minutes
 ```
 
 เลือกหนึ่งข้อ:
@@ -73,7 +73,14 @@ More than 4 weeks
 ถ้ายังไม่เข้าใจโจทย์ทั้งหมด ให้เขียนสิ่งที่เข้าใจในตอนนี้ ความเข้าใจอาจยังไม่ครบหรืออาจผิดได้ แต่ต้องพยายามอธิบายอย่างจริงใจ
 
 ```text
-
+โจทย์ให้ขียนโปรแกรม นับสระ ที่อยู่ในข้อความนับเพียงแค่ a e i o u
+ตัวเล็กและตัวใหญ่
+Input:
+โปรแกรมรับค่าstr(ข้อความ)
+output:
+แสดงสระที่นับได้
+Constraints:
+Outputต้องเป็นข้อความ เเละตัวเลข
 ```
 
 ---
@@ -93,9 +100,11 @@ More than 4 weeks
 สามารถเขียนเป็น pseudocode, flowchart idea หรือขั้นตอนความคิดได้
 
 ```text
-Step 1:
-Step 2:
-Step 3:
+Step 1:อ่านรับค่าstr(ข้อความ)เเละทำให้ข้อความกลายเป็นตัวพิมพ์เล็กหมด
+Step 2:ใช้for loop ตัวเเปรx ใน ข้อความaeiou เเละ สร้างตัวเเปร count มาใช้นับจำนวนครั้งของข้อความ
+Step 3:ถ้าตัวเเปร count มากกว่า 0
+Step 4:ให้พิมพ์ข้อความที่นับได้เช่น ข้อความ : จำนวนครั้งของข้อความ
+
 ```
 
 ---
@@ -115,7 +124,7 @@ Step 3:
 ห้ามคัดลอกคำอธิบายจากคนอื่น
 
 ```text
-
+วิธีสุดท้ายของฉันเหมือนกับแผนแรก เพราะให้ข้อความกลายเป็นตัวพิมพ์เล็กให้หมดจะได้ง่ายไม่ต้องติดปัญหาตัวพิมพ์ใหญ่  เเล้วใช้for loop ตัวเเปรx ใน ข้อความaeiou เเละ สร้างตัวเเปร count มาใช้นับจำนวนครั้งของข้อความ
 ```
 
 ---
@@ -135,31 +144,31 @@ Step 3:
 ทำไมเลือก case นี้:
 
 ```text
-
+ทดสอบว่าผลลัพออกมาถูกไหม
 ```
 
 Input:
 
 ```text
-
+mooo
 ```
 
 Expected output:
 
 ```text
-
+o : 3
 ```
 
 Actual output:
 
 ```text
-
+o : 3
 ```
 
 Result:
 
 ```text
-Pass / Not Pass
+Pass
 ```
 
 ### Test Case 2
@@ -167,31 +176,31 @@ Pass / Not Pass
 ทำไมเลือก case นี้:
 
 ```text
-
+ทดสอบว่าถ้าพิมพ์ตัวพิมพ์ใหญ่ผลลัพธ์จะออกมาเป็นไง
 ```
 
 Input:
 
 ```text
-
+MO
 ```
 
 Expected output:
 
 ```text
-
+o : 1
 ```
 
 Actual output:
 
 ```text
-
+o : 1
 ```
 
 Result:
 
 ```text
-Pass / Not Pass
+Pass
 ```
 
 ### Test Case 3
@@ -199,31 +208,31 @@ Pass / Not Pass
 ทำไมเลือก case นี้:
 
 ```text
-
+ทดสอบว่าถ้าไม่มีสระผลลัพธืจะออกมาเป็นไง
 ```
 
 Input:
 
 ```text
-
+SSSS
 ```
 
 Expected output:
 
 ```text
-
+0
 ```
 
 Actual output:
 
 ```text
-
+ไม่มี
 ```
 
 Result:
 
 ```text
-Pass / Not Pass
+Not Pass
 ```
 
 ---
@@ -233,7 +242,7 @@ Pass / Not Pass
 ใช้ AI กับโจทย์นี้หรือไม่
 
 ```text
-Yes / No
+No
 ```
 
 ถ้าใช้ AI ต้องทำไฟล์นี้ด้วย:
@@ -251,7 +260,7 @@ ai_reflection.md
 ได้ถามเพื่อน TA ผู้สอน หรือบุคคลอื่นเพื่อขอความช่วยเหลือในโจทย์นี้หรือไม่
 
 ```text
-Yes / No
+No
 ```
 
 ถ้าใช่ ให้อธิบายสั้น ๆ ว่าได้รับความช่วยเหลือแบบใด
@@ -305,10 +314,10 @@ No
 
 | Statement | Yes/No |
 |---|---|
-| I wrote this submission in my own words. | |
-| I understand my final code. | |
-| I recorded the real OJ status. | |
-| I did not copy AI-generated text directly into this file. | |
-| I did not copy code from another person. | |
-| If I received human help, I disclosed it in this file. | |
-| I submitted the final code to the OJ by myself. | |
+| I wrote this submission in my own words. | Yes |
+| I understand my final code. | Yes |
+| I recorded the real OJ status. | Yes |
+| I did not copy AI-generated text directly into this file. | Yes |
+| I did not copy code from another person. | Yes |
+| If I received human help, I disclosed it in this file. | Yes |
+| I submitted the final code to the OJ by myself. | Yes |
