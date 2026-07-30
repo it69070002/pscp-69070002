@@ -15,7 +15,7 @@
 หมายเลข/ชื่อโจทย์ OJ:
 
 ```text
-
+OJ3042 - หาร 10
 ```
 
 OJ submission ID ถ้ามีการส่งแล้ว:
@@ -27,13 +27,13 @@ OJ submission ID ถ้ามีการส่งแล้ว:
 สถานะ OJ:
 
 ```text
-Pass / Not Pass / Not Submit
+Pass
 ```
 
 เวลาที่ใช้คิดและทำโจทย์ด้วยตนเอง:
 
 ```text
-
+30-60 minutes
 ```
 
 เลือกหนึ่งข้อ:
@@ -73,7 +73,13 @@ More than 4 weeks
 ถ้ายังไม่เข้าใจโจทย์ทั้งหมด ให้เขียนสิ่งที่เข้าใจในตอนนี้ ความเข้าใจอาจยังไม่ครบหรืออาจผิดได้ แต่ต้องพยายามอธิบายอย่างจริงใจ
 
 ```text
-
+เขียนโปรแกรมเพื่อรับค่าจำนวนเต็มบวก 1 จำนวน (N) จากนั้นหาว่าจำนวนเต็มบวกตั้งแต่ N ถึง 0 มีตัวเลขใดบ้างที่หารด้วย 10 ลงตัว
+Input:
+โปรแกรมรับป็นข้อมูลจำนวนเต็มบวก N
+Output:
+แสดงจำนวนเต็มบวกตั้งแต่ N ถึง 0 ที่หารด้วย 10 ลงตัว (คั่นข้อมูลแต่ละตัวด้วยช่องว่าง)
+Constraints:
+input เป็นจำนวนเต็ม ฉันควรพิจารณา 0 และตัวเลขติดลบด้วย
 ```
 
 ---
@@ -93,9 +99,10 @@ More than 4 weeks
 สามารถเขียนเป็น pseudocode, flowchart idea หรือขั้นตอนความคิดได้
 
 ```text
-Step 1:
-Step 2:
-Step 3:
+Step 1:สร้างตัวเเปร อ่านจำนวนเต็ม n
+Step 2: ให้ตัวเเปรnumber_a หารแบบปัดลง เเล้วคูณด้วย10
+Step 3:ใช้for loop ให้ตัวเเปร i เริ่มต้นที่ค่า ตัวเเปรnumber_a แล้วลดค่าลงครั้งละ 10 ไปเรื่อย ๆ จนถึง 0 จากนั้นจึงหยุดการวนลูป
+Step 4:ให้พิมพ์ i เเล้วเว้นวรรค
 ```
 
 ---
@@ -115,6 +122,7 @@ Step 3:
 ห้ามคัดลอกคำอธิบายจากคนอื่น
 
 ```text
+วิธีสุดท้ายของฉันเหมือนกับแผนแรก เพราะใช้ตัวเเปรหารแบบปัดลง เเล้วคูณด้วย10 เเล้วใช้for loop ให้ตัวเเปร i เริ่มต้นที่ค่า ตัวเเปรnumber_a แล้วลดค่าลงครั้งละ 10 ไปเรื่อย ๆ จนถึง 0 จากนั้นจึงหยุดการวนลูป
 
 ```
 
@@ -135,31 +143,31 @@ Step 3:
 ทำไมเลือก case นี้:
 
 ```text
-
+ทดสอบว่าโค้ดถูกต้องไหม
 ```
 
 Input:
 
 ```text
-
+100
 ```
 
 Expected output:
 
 ```text
-
+100 90 80 70 60 50 40 30 20 10 0 
 ```
 
 Actual output:
 
 ```text
-
+100 90 80 70 60 50 40 30 20 10 0 
 ```
 
 Result:
 
 ```text
-Pass / Not Pass
+Pass
 ```
 
 ### Test Case 2
@@ -167,31 +175,31 @@ Pass / Not Pass
 ทำไมเลือก case นี้:
 
 ```text
-
+ทดสอบว่าถ้าเลขไม่ลงท้ายด้วย0จะออกมาตามเงื่อนไขไหม
 ```
 
 Input:
 
 ```text
-
+99
 ```
 
 Expected output:
 
 ```text
-
+90 80 70 60 50 40 30 20 10 0 
 ```
 
 Actual output:
 
 ```text
-
+90 80 70 60 50 40 30 20 10 0 
 ```
 
 Result:
 
 ```text
-Pass / Not Pass
+Pass
 ```
 
 ### Test Case 3
@@ -199,31 +207,31 @@ Pass / Not Pass
 ทำไมเลือก case นี้:
 
 ```text
-
+ทดสอบว่าถ้าติดลบ ผลลัพจะได้ยังไง
 ```
 
 Input:
 
 ```text
-
+-25
 ```
 
 Expected output:
 
 ```text
-
+0
 ```
 
 Actual output:
 
 ```text
-
+ไม่มี
 ```
 
 Result:
 
 ```text
-Pass / Not Pass
+Pass
 ```
 
 ---
@@ -233,7 +241,7 @@ Pass / Not Pass
 ใช้ AI กับโจทย์นี้หรือไม่
 
 ```text
-Yes / No
+No
 ```
 
 ถ้าใช้ AI ต้องทำไฟล์นี้ด้วย:
@@ -251,7 +259,7 @@ ai_reflection.md
 ได้ถามเพื่อน TA ผู้สอน หรือบุคคลอื่นเพื่อขอความช่วยเหลือในโจทย์นี้หรือไม่
 
 ```text
-Yes / No
+No
 ```
 
 ถ้าใช่ ให้อธิบายสั้น ๆ ว่าได้รับความช่วยเหลือแบบใด
@@ -305,10 +313,10 @@ No
 
 | Statement | Yes/No |
 |---|---|
-| I wrote this submission in my own words. | |
-| I understand my final code. | |
-| I recorded the real OJ status. | |
-| I did not copy AI-generated text directly into this file. | |
-| I did not copy code from another person. | |
-| If I received human help, I disclosed it in this file. | |
-| I submitted the final code to the OJ by myself. | |
+| I wrote this submission in my own words. | Yes |
+| I understand my final code. | Yes |
+| I recorded the real OJ status. | Yes |
+| I did not copy AI-generated text directly into this file. | Yes |
+| I did not copy code from another person. | Yes |
+| If I received human help, I disclosed it in this file. | Yes |
+| I submitted the final code to the OJ by myself. | Yes |
