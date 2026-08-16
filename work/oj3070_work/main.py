@@ -1,15 +1,14 @@
 """3070"""
 def main():
     """main"""
-    a = int(input())
-    b = int(input())
-    c = int(input())
-    text = [a,b,c]
-    even,odd = 0,0
-    for i in text:
-        if i % 2:
-            i += 1
-            print(even)
-    else:
-        print(odd)
+    odd = 0
+    even = 0
+    for _ in range(3):
+        n = int(input())
+        if not n % 2:
+            even += 1
+        else:
+            odd += 1
+    print(even)
+    print(odd)
 main()

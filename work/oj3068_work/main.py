@@ -2,18 +2,13 @@
 def main():
     """main"""
     year = int(input())
-    if not year < 1852:
-        print("yes")
-    else:
-        print("no")
-    if not year % 4:
-        if not year % 100:
-            if not year % 400:
-                print("yes")
-            else:
-                print("no")
-        else:
+    if 1 <= year <= 2026:
+        if not year % 4:
             print("yes")
-    else:
-        print("no")
+        elif not year % 100:
+            print("no")
+        elif not year % 400:
+            print("yes")
+        else:
+            print("no")
 main()
