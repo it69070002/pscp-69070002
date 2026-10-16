@@ -1,2 +1,9 @@
 """3382"""
-a = input()
+data = []
+while True:
+    s = input()
+    if s == "NULL":
+        break
+    data.append(s)
+for s in reversed(data):
+    print(s)
