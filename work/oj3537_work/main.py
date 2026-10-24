@@ -1,26 +1,24 @@
 """3537"""
-alive = {}
+import json
+players = {}
 dead = {}
 while True:
-    data = input()
-    if data == "Start":
+    text = input()
+    if text == "Start":
         break
-    name, role = data.split()
-    alive[name] = role
+    data = json.loads(text)
+    players.update(data)
 while True:
-    name = input()
-    if name == "End":
+    text = input()
+    if text == "End":
         break
-    if name in alive:
-        dead[name] = alive.pop(name)
-count = 0
-for role in alive.values():
-    if role == "Impostor":
-        count += 1
-print(count, "Impostor Remains")
+    if text in players:
+        dead[text] = players.pop(text)
+impostor_count = list(players.values()).count("Impostor")
+print(f"{impostor_count} Impostor Remains")
 print("***Alive***")
-for name in sorted(alive):
-    print(name, alive[name])
+for name in sorted(players.keys()):
+    print(f"{name} : {players[name]}")
 print("***Dead***")
-for name in sorted(dead):
-    print(name, dead[name])
+for name in sorted(dead.keys()):
+    print(f"{name} : {dead[name]}")
